@@ -32,7 +32,7 @@ const Projects = () => {
                         <Link target='_blank' href="https://codescloth.netlify.app/" className='text-sm border border-purple-700 cursor-pointer hover:scale-[1.2] px-4 py-1 rounded-full bg-purple-700 bg-opacity-35 font-semibold'>Visit</Link>
                     </div>
                     <div className='mx-auto'>
-                        <Image unoptimized className='rounded-lg border' src={Project_1} alt="project1" width={300} height={300} />
+                        <Image priority unoptimized className='rounded-lg border' src={Project_1} alt="project1" width={300} height={300} />
                     </div>
                     <div className='flex items-center gap-2'>
                         <p className='text-xs border border-blue-500 bg-blue-500 bg-opacity-35 rounded-full px-2 py-1'>React.js</p>
@@ -52,7 +52,7 @@ const Projects = () => {
                         <Link target='_blank' href="https://buymeachaiplz.netlify.app/" className='text-sm border border-purple-700 cursor-pointer hover:scale-[1.2] px-4 py-1 rounded-full bg-purple-700 bg-opacity-35 font-semibold'>Visit</Link>
                     </div>
                     <div className='mx-auto'>
-                        <Image unoptimized className='rounded-lg border' src={Project_2} alt="project1" width={300} height={300} />
+                        <Image priority unoptimized className='rounded-lg border' src={Project_2} alt="project1" width={300} height={300} />
                     </div>
                     <div className='flex items-center gap-2'>
                         <p className='text-xs border border-blue-500 bg-blue-500 bg-opacity-35 rounded-full px-2 py-1'>React.js</p>

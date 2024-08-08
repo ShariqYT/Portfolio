@@ -21,7 +21,7 @@ const Home = () => {
         <div className="bg-purple-400 absolute rounded-full w-52 h-32 blur-[150px]"></div>
         <div className="bg-pink-600 absolute right-0 top-0 rounded-full w-64 h-24 blur-[200px]"></div>
         <div>
-          <Image unoptimized priority className='drop-shadow-[0px_0px_50px_rgba(150,50,235,0.5)]' src={Profile} alt="profile" width={600} height={600} />
+          <Image priority unoptimized className='drop-shadow-[0px_0px_50px_rgba(150,50,235,0.5)]' src={Profile} alt="profile" width={600} height={600} />
         </div>
         <div className="gap-5 flex flex-col items-center justify-center">
           <Link href={''} className="fill-white hover:scale-[1.2] duration-200">
