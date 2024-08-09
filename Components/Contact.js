@@ -2,9 +2,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import Whatsapp from '@/public/WhatsAppButtonGreenLarge.png'
-import LinkedIn from '@/public/linkedin.png'
-import Email from '@/public/Gmail.png'
+import Whatsapp from '../public/WhatsAppButtonGreenLarge.png'
+import LinkedIn from '../public/linkedin.png'
+import Email from '../public/gmail.png'
 import toast from 'react-hot-toast'
 import { useRouter } from 'next/navigation'
 
