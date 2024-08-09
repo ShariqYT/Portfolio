@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all .3s ease-in-out;
+  transition: background 0.3s, background-color 0.3s, border 0.3s;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }

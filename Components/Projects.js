@@ -9,7 +9,7 @@ const Projects = () => {
         <section id="Projects" className='relative min-h-screen'>
             {/* Titles */}
             <div className="bg-pink-500 absolute left-[75%] top-[20%] rounded-full w-52 h-32 blur-[150px]"></div>
-            <h1 className='text-right sticky -top-10 z-10 text-8xl font-semibold pt-40 mb-24 px-44'>P<span className='text-7xl'>ROJECTS</span></h1>
+            <h1 className='text-right dark:text-white text-dark sticky -top-10 z-10 text-8xl font-semibold pt-40 mb-24 px-44'>P<span className='text-7xl'>ROJECTS</span></h1>
 
             {/* Background Lines */}
             <div className='absolute top-96 left-96 transform'>
@@ -23,13 +23,13 @@ const Projects = () => {
             </div>
 
             {/* Cards */}
-            <div className='card-container flex flex-row gap-12 text-2xl justify-center w-[75%] m-auto'>
+            <div className='card-container dark:text-white text-dark flex flex-row gap-12 text-2xl justify-center w-[75%] m-auto'>
 
-                <div className="card hover:shadow-[0_0_50px_rgba(150,50,235,.4)] hover:scale-[1.1] w-96 h-96 flex flex-col gap-4 border-4 border-purple-700 rounded-lg p-6">
+                <div className="card hover:shadow-[0_0_50px_rgba(150,50,235,.4)] transition-transform duration-200 hover:scale-[1.1] w-96 h-96 flex flex-col gap-4 border-4 border-purple-700 rounded-lg p-6">
                     <div className='flex items-center justify-between'>
                         <h1>#1</h1>
                         <h2 className='font-semibold'>CodesCloth</h2>
-                        <Link target='_blank' href="https://codescloth.netlify.app/" className='text-sm border border-purple-700 cursor-pointer hover:scale-[1.2] px-4 py-1 rounded-full bg-purple-700 bg-opacity-35 font-semibold'>Visit</Link>
+                        <Link target='_blank' href="https://codescloth.netlify.app/" className='text-sm border border-purple-700 cursor-pointer hover:scale-[1.2] transition-transform duration-200 px-4 py-1 rounded-full bg-purple-700 bg-opacity-35 font-semibold'>Visit</Link>
                     </div>
                     <div className='mx-auto'>
                         <Image priority unoptimized className='rounded-lg border' src={Project_1} alt="project1" width={300} height={300} />
@@ -45,11 +45,11 @@ const Projects = () => {
                     </p>
                 </div>
 
-                <div className="card hover:shadow-[0_0_50px_rgba(150,50,235,.4)] hover:scale-[1.1] w-96 h-96 flex flex-col gap-4 border-4 border-purple-700 rounded-lg p-6">
+                <div className="card hover:shadow-[0_0_50px_rgba(150,50,235,.4)] transition-transform duration-200 hover:scale-[1.1] w-96 h-96 flex flex-col gap-4 border-4 border-purple-700 rounded-lg p-6">
                     <div className='flex items-center justify-between'>
                         <h1>#2</h1>
                         <h2 className='font-semibold'>BuyMeAChai</h2>
-                        <Link target='_blank' href="https://buymeachaiplz.netlify.app/" className='text-sm border border-purple-700 cursor-pointer hover:scale-[1.2] px-4 py-1 rounded-full bg-purple-700 bg-opacity-35 font-semibold'>Visit</Link>
+                        <Link target='_blank' href="https://buymeachaiplz.netlify.app/" className='transition-transform duration-200 text-sm border border-purple-700 cursor-pointer hover:scale-[1.2] px-4 py-1 rounded-full bg-purple-700 bg-opacity-35 font-semibold'>Visit</Link>
                     </div>
                     <div className='mx-auto'>
                         <Image priority unoptimized className='rounded-lg border' src={Project_2} alt="project1" width={300} height={300} />

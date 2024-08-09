@@ -70,7 +70,7 @@ const Contact = () => {
 
 
     return (
-        <section id="Contact" className="relative min-h-screen">
+        <section id="Contact" className="relative dark:text-white text-dark min-h-screen">
 
             {/* Titles */}
             <div className="bg-pink-500 absolute left-[75%] top-[20%] rounded-full w-52 h-32 blur-[150px]"></div>
@@ -92,15 +92,15 @@ const Contact = () => {
             </div>
 
             {/* Form */}
-            <div className='flex gap-12 justify-between items-center border-4 border-purple-600 bg-purple-800 bg-opacity-15 hover:shadow-[0_0_50px_rgba(150,50,235,.5)] w-fit mx-auto rounded-lg px-20 pt-14 pb-8 -mt-12'>
+            <div className='flex gap-12 justify-between items-center border-4 border-purple-600 bg-purple-800 bg-opacity-15 hover:shadow-[0_0_50px_rgba(150,50,235,.5)] transition-all duration-300 w-fit mx-auto rounded-lg px-20 pt-14 pb-8 -mt-12'>
 
-                <form className='flex flex-col w-[40vw] text-white' onSubmit={handleSubmit}>
+                <form className='flex flex-col w-[40vw]  dark:text-light' onSubmit={handleSubmit}>
                     <div className="mb-4">
-                        <label className="text-white block text-sm font-bold mb-2" htmlFor="name">
+                        <label className="block text-sm font-bold mb-2" htmlFor="name">
                             Name
                         </label>
                         <input
-                            className="border-purple-600 bg-purple-950 bg-opacity-35 shadow appearance-none border rounded-lg w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-purple-700"
+                            className="border-purple-600 bg-purple-950 text-white placeholder:text-dark dark:placeholder:text-gray-400 bg-opacity-35 shadow appearance-none border rounded-lg w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-purple-700"
                             id="name"
                             name='name'
                             type="text"
@@ -112,11 +112,11 @@ const Contact = () => {
                     </div>
 
                     <div className="mb-4">
-                        <label className="text-white block text-sm font-bold mb-2" htmlFor="email">
+                        <label className="block text-sm font-bold mb-2" htmlFor="email">
                             Email
                         </label>
                         <input
-                            className="border-purple-600 bg-purple-950 bg-opacity-35 shadow appearance-none border rounded-lg w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-purple-700 focus:shadow-outline"
+                            className="border-purple-600 bg-purple-950 text-white placeholder:text-dark dark:placeholder:text-gray-400 bg-opacity-35 shadow appearance-none border rounded-lg w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-purple-700 focus:shadow-outline"
                             id="email"
                             name='email'
                             type="email"
@@ -128,11 +128,11 @@ const Contact = () => {
                     </div>
 
                     <div className="mb-4">
-                        <label className="text-white block text-sm font-bold mb-2" htmlFor="message">
+                        <label className="block text-sm font-bold mb-2" htmlFor="message">
                             Message (min Characters: 50)
                         </label>
                         <textarea
-                            className="border-purple-600 bg-purple-950 bg-opacity-35 resize-none shadow appearance-none border rounded-lg w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-purple-700"
+                            className="border-purple-600 bg-purple-950 text-white placeholder:text-dark dark:placeholder:text-gray-400 bg-opacity-35 resize-none shadow appearance-none border rounded-lg w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-purple-700"
                             id="message"
                             name='message'
                             value={formData.message}
@@ -157,18 +157,18 @@ const Contact = () => {
                 </form>
 
                 {/* Social Media Links */}
-                <div className='bg-purple-900 hover:scale-[1.1] hover:shadow-[0_0_50px_rgba(150,50,235,0.75)] flex flex-col gap-4 px-16 py-20 rounded-lg'>
-                    <Link target='_blank' href={"https://api.whatsapp.com/send?phone=+918545994449&text=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you!"} className='justify-center hover:scale-[1.2] hover:drop-shadow-[0_0_10px_rgba(23,252,3,0.7)] flex items-center gap-4'>
+                <div className='bg-purple-900 hover:scale-[1.1] hover:shadow-[0_0_50px_rgba(150,50,235,0.75)] transition-all duration-300 flex flex-col gap-4 px-16 py-20 rounded-lg'>
+                    <Link target='_blank' href={"https://api.whatsapp.com/send?phone=+918545994449&text=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you!"} className='justify-center transition-all duration-300 hover:scale-[1.2] hover:drop-shadow-[0_0_10px_rgba(23,252,3,0.7)] flex items-center gap-4'>
                         <Image priority src={Whatsapp} unoptimized alt="Whatsapp" width={250} height={250} />
                     </Link>
                     <Link target='_blank' href={"mailto:shariqmohd737@gmail.com"} className='flex justify-center items-center gap-2'>
-                        <button className='font-semibold text-lg flex justify-center items-center hover:scale-[1.2] hover:shadow-[0_0_10px_rgba(252,24,3,1)] gap-2 border-2 border-red-600 rounded-xl px-16 py-4 bg-red-600 bg-opacity-35'>
+                        <button className='font-semibold text-lg text-white flex justify-center items-center transition-all duration-300 hover:scale-[1.2] hover:shadow-[0_0_10px_rgba(252,24,3,1)] gap-2 border-2 border-red-600 rounded-xl px-16 py-4 bg-red-600 bg-opacity-35'>
                             <Image priority src={Email} unoptimized alt="Email" width={25} height={25} />
                             Email Me
                         </button>
                     </Link>
                     <Link target='_blank' href={"https://www.linkedin.com/in/mohd-shariq-sheikh/"} className='flex justify-center items-center gap-2'>
-                        <button className='font-semibold text-lg flex justify-center items-center hover:scale-[1.2] hover:shadow-[0_0_10px_rgba(8,145,178,1)] gap-2 border-2 border-cyan-600 rounded-xl px-16 py-4 bg-cyan-600 bg-opacity-35'>
+                        <button className='font-semibold text-lg text-white flex justify-center items-center transition-all duration-300 hover:scale-[1.2] hover:shadow-[0_0_10px_rgba(8,145,178,1)] gap-2 border-2 border-cyan-600 rounded-xl px-16 py-4 bg-cyan-600 bg-opacity-35'>
                             <Image priority src={LinkedIn} unoptimized alt="Email" width={25} height={25} />
                             LinkedIn
                         </button>

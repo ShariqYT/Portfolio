@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="#603cba" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className="bg-[#09000B] min-h-screen overflow-x-hidden">
+      <body className="dark:bg-dark bg-light min-h-screen overflow-x-hidden">
         <Toaster
           position="bottom-center"
           reverseOrder={true}
