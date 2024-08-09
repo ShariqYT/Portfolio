@@ -35,6 +35,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
+        <meta name="google-site-verification" content="jEAJb--5CmKi8Vki01te7J0SAjEz6dO-trepN8mHnto" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Mohammad Shariq" />
