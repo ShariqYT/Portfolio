@@ -13,7 +13,7 @@ export const metadata = {
     siteName: "Mohammad Shariq Portfolio",
     images: [
       {
-        url: "/og-image.jpg", // Replace with your Open Graph image
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Mohammad Shariq Portfolio",
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Mohammad Shariq | Portfolio",
     description: "Portfolio of Shariq, a full stack developer",
-    image: "/og-image.jpg", // Replace with your Twitter card image
+    image: "/opengraph-image.png",
   },
 };
 
