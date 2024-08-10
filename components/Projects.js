@@ -6,26 +6,26 @@ import Project_2 from '@/public/projects/Project_2.png'
 
 const Projects = () => {
     return (
-        <section id="Projects" className='relative min-h-screen'>
+        <section id="Projects" className='relative min-h-screen lg:mt-0 mt-[12rem]'>
             {/* Titles */}
-            <div className="bg-pink-500 absolute left-[75%] top-[20%] rounded-full w-52 h-32 blur-[150px]"></div>
-            <h1 className='text-right dark:text-white text-dark sticky -top-10 z-10 text-8xl font-semibold pt-40 mb-24 px-44'>P<span className='text-7xl'>ROJECTS</span></h1>
+            <div className="bg-pink-500 absolute left-[25%] lg:left-[75%] top-[20%] rounded-full w-52 h-32 blur-[150px]"></div>
+            <h1 className='dark:text-white text-center lg:text-right text-dark sticky -top-10 z-10 lg:text-8xl text-5xl font-semibold pt-40 mb-24 lg:px-44'>P<span className='lg:text-7xl text-3xl'>ROJECTS</span></h1>
 
             {/* Background Lines */}
             <div className='absolute top-96 left-96 transform'>
-                <div className='rotate-[25deg]'>
-                    <div className='absolute -top-48 -left-52 w-2 h-72 shadow-[0_0_50px_rgba(150,50,235,1)] bg-purple-600 rounded-full'></div>
-                    <div className='absolute -top-48 -left-52 w-72 h-2 shadow-[0_0_50px_rgba(150,50,235,1)] bg-purple-600 rounded-full'></div>
+                <div className='lg:rotate-[25deg] rotate-[45deg] absolute -right-10'>
+                    <div className='absolute -top-48 -left-52 w-2 lg:h-72 h-52 shadow-[0_0_50px_rgba(150,50,235,1)] bg-purple-600 rounded-full'></div>
+                    <div className='absolute -top-48 -left-52 lg:w-72 w-52 h-2 shadow-[0_0_50px_rgba(150,50,235,1)] bg-purple-600 rounded-full'></div>
 
-                    <div className='absolute bottom-20 right-24 w-2 h-72 shadow-[0_0_50px_rgba(150,50,235,1)] bg-purple-600 rounded-full'></div>
-                    <div className='absolute bottom-20 right-24 w-72 h-2 shadow-[0_0_50px_rgba(150,50,235,1)] bg-purple-600 rounded-full'></div>
+                    <div className='absolute bottom-20 right-24 w-2 lg:h-72 h-52 shadow-[0_0_50px_rgba(150,50,235,1)] bg-purple-600 rounded-full'></div>
+                    <div className='absolute bottom-20 right-24 lg:w-72 w-52 h-2 shadow-[0_0_50px_rgba(150,50,235,1)] bg-purple-600 rounded-full'></div>
                 </div>
             </div>
 
             {/* Cards */}
-            <div className='card-container dark:text-white text-dark flex flex-row gap-12 text-2xl justify-center w-[75%] m-auto'>
+            <div className='card-container dark:text-white text-dark flex flex-col lg:flex-row gap-12 text-2xl justify-center lg:items-start items-center lg:w-[75%] m-auto'>
 
-                <div className="card hover:shadow-[0_0_50px_rgba(150,50,235,.4)] transition-transform duration-200 hover:scale-[1.1] w-96 h-96 flex flex-col gap-4 border-4 border-purple-700 rounded-lg p-6">
+                <div className="card hover:shadow-[0_0_50px_rgba(150,50,235,.4)] transition-transform duration-200 hover:scale-[1.1] lg:w-96 w-[23rem] lg:h-96 h-[23rem] flex flex-col gap-4 border-4 border-purple-700 rounded-lg p-6">
                     <div className='flex items-center justify-between'>
                         <h1>#1</h1>
                         <h2 className='font-semibold'>CodesCloth</h2>
@@ -45,7 +45,7 @@ const Projects = () => {
                     </p>
                 </div>
 
-                <div className="card hover:shadow-[0_0_50px_rgba(150,50,235,.4)] transition-transform duration-200 hover:scale-[1.1] w-96 h-96 flex flex-col gap-4 border-4 border-purple-700 rounded-lg p-6">
+                <div className="card hover:shadow-[0_0_50px_rgba(150,50,235,.4)] transition-transform duration-200 hover:scale-[1.1] lg:w-96 w-[23rem] lg:h-96 h-[23rem] flex flex-col gap-4 border-4 border-purple-700 rounded-lg p-6">
                     <div className='flex items-center justify-between'>
                         <h1>#2</h1>
                         <h2 className='font-semibold'>BuyMeAChai</h2>

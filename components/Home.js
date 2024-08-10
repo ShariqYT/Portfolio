@@ -5,12 +5,15 @@ import Profile from '@/public/profilePic.png';
 
 const Home = () => {
   return (
-    <section id='/' className='min-h-screen'>
-      <div className="flex items-center justify-between m-56">
-        <div className="flex flex-col relative justify-center">
-          <h1 className="dark:text-gray-400 text-gray-500 font-light text-4xl">FULL-STACK WEB DEVELOPER</h1>
-          <h1 className="font-extrabold dark:text-purple-500 text-purple-900 font-chakra text-8xl">M<span className="text-7xl tracking-widest">OHAMMAD</span></h1>
-          <h1 className="font-extrabold dark:text-purple-500 text-purple-900 font-chakra text-8xl">S<span className="text-7xl tracking-widest">HARIQ</span></h1>
+    <section id='/' className='lg:min-h-screen'>
+      <div className="flex flex-col lg:flex-row items-center justify-between mt-32 lg:m-56">
+        <div className='lg:hidden block'>
+          <Image priority unoptimized className='lg:hidden block rounded-full drop-shadow-[0px_0px_30px_rgba(150,50,235,0.5)] lg:drop-shadow-[0px_0px_50px_rgba(150,50,235,0.5)]' src={Profile} alt="profile" width={600} height={600} />
+        </div>
+        <div className="flex flex-col lg:items-start items-center relative justify-center">
+          <h1 className="dark:text-gray-400 text-gray-500 font-light text-lg lg:text-4xl">FULL-STACK WEB DEVELOPER</h1>
+          <h1 className="font-extrabold dark:text-purple-500 text-purple-900 font-chakra text-6xl lg:text-8xl">M<span className="lg:text-7xl text-4xl tracking-widest">OHAMMAD</span></h1>
+          <h1 className="font-extrabold dark:text-purple-500 text-purple-900 font-chakra text-6xl lg:text-8xl">S<span className="lg:text-7xl text-4xl tracking-widest">HARIQ</span></h1>
           <div className="mt-20 flex items-center gap-4">
             <div className="w-1 h-24 rounded-full bg-gray-400"></div>
             <p className="w-80 tracking-wider text-xl dark:text-gray-400 text-gray-500">
@@ -19,11 +22,11 @@ const Home = () => {
           </div>
         </div>
         <div className="bg-purple-400 absolute rounded-full w-52 h-32 blur-[150px]"></div>
-        <div className="bg-pink-600 absolute right-0 top-0 rounded-full w-64 h-24 blur-[200px]"></div>
-        <div>
-          <Image priority unoptimized className='rounded-full drop-shadow-[0px_0px_50px_rgba(150,50,235,0.5)]' src={Profile} alt="profile" width={600} height={600} />
+        <div className="bg-pink-600 absolute lg:right-0 right-32 lg:bottom-0 bottom-0 lg:top-0 rounded-full w-36 lg:w-64 h-16 lg:h-24 blur-[80px] lg:blur-[200px]"></div>
+        <div className='lg:block hidden'>
+          <Image priority unoptimized className='lg:block hidden rounded-full drop-shadow-[0px_0px_50px_rgba(150,50,235,0.5)]' src={Profile} alt="profile" width={600} height={600} />
         </div>
-        <div className="gap-5 flex flex-col items-center justify-center">
+        <div className="gap-5 flex lg:mt-0 mt-20 lg:flex-col items-center justify-center">
           <Link href={'https://discord.gg/wbfb66EZDU'} target='_blank' className="dark:fill-white hover:scale-[1.2] transition-transform duration-200">
             <div className="dark:bg-[#13071f] shadow-[0px_0px_20px_#7b2cbf] flex justify-center items-center h-10 w-10 p-2  rounded-full">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" /></svg>

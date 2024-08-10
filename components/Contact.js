@@ -74,14 +74,14 @@ const Contact = () => {
 
             {/* Titles */}
             <div className="bg-pink-500 absolute left-[75%] top-[20%] rounded-full w-52 h-32 blur-[150px]"></div>
-            <div className='mb-24 px-44'>
-                <p className='text-right text-8xl font-semibold pt-40 '>C<span className='text-7xl'>ONTACT</span> M<span className='text-7xl'>E</span></p>
-                <p className='text-right'>Feel free to contact me any time.</p>
-                <p className='text-right'>I will try to get back to you as soon as possible.</p>
+            <div className='mb-24 lg:px-44'>
+                <p className='lg:text-right text-center lg:text-8xl text-5xl font-semibold pb-6 lg:pb-0 pt-28 lg:pt-40'>C<span className='lg:text-7xl text-3xl'>ONTACT</span> M<span className='lg:text-7xl text-3xl'>E</span></p>
+                <p className='lg:text-right text-center lg:text-base text-sm'>Feel free to contact me any time.</p>
+                <p className='lg:text-right text-center lg:text-base text-sm'>I will try to get back to you as soon as possible.</p>
             </div>
 
             {/* Background Lines */}
-            <div className='absolute top-96 left-96 transform'>
+            <div className='absolute lg:block hidden top-96 left-96 transform'>
                 <div>
                     <div className='absolute -top-48 -left-52 w-2 h-72 shadow-[0_0_50px_rgba(150,50,235,1)] bg-purple-600 rounded-full'></div>
                     <div className='absolute -top-48 -left-52 w-72 h-2 shadow-[0_0_50px_rgba(150,50,235,1)] bg-purple-600 rounded-full'></div>
@@ -92,9 +92,9 @@ const Contact = () => {
             </div>
 
             {/* Form */}
-            <div className='flex gap-12 justify-between items-center border-4 border-purple-600 bg-purple-800 bg-opacity-15 hover:shadow-[0_0_50px_rgba(150,50,235,.5)] transition-all duration-300 w-fit mx-auto rounded-lg px-20 pt-14 pb-8 -mt-12'>
+            <div className='flex lg:flex-row flex-col-reverse gap-12 justify-between items-center border-4 border-purple-600 bg-purple-800 bg-opacity-15 hover:shadow-[0_0_50px_rgba(150,50,235,.5)] transition-all duration-300 lg:w-fit mx-auto rounded-lg lg:px-20 px-6 pt-14 pb-8 -mt-12'>
 
-                <form className='flex flex-col w-[40vw]  dark:text-light' onSubmit={handleSubmit}>
+                <form className='flex flex-col lg:w-[40vw] w-full dark:text-light' onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label className="block text-sm font-bold mb-2" htmlFor="name">
                             Name
@@ -162,13 +162,13 @@ const Contact = () => {
                         <Image priority src={Whatsapp} unoptimized alt="Whatsapp" width={250} height={250} />
                     </Link>
                     <Link target='_blank' href={"mailto:shariqmohd737@gmail.com"} className='flex justify-center items-center gap-2'>
-                        <button className='font-semibold text-lg text-white flex justify-center items-center transition-all duration-300 hover:scale-[1.2] hover:shadow-[0_0_10px_rgba(252,24,3,1)] gap-2 border-2 border-red-600 rounded-xl px-16 py-4 bg-red-600 bg-opacity-35'>
+                        <button className='font-semibold text-lg text-white flex justify-center items-center transition-all duration-300 hover:scale-[1.2] hover:shadow-[0_0_10px_rgba(252,24,3,1)] gap-2 border-2 border-red-600 rounded-xl px-8 lg:px-16 py-4 bg-red-600 bg-opacity-35'>
                             <Image priority src={Email} unoptimized alt="Email" width={25} height={25} />
                             Email Me
                         </button>
                     </Link>
                     <Link target='_blank' href={"https://www.linkedin.com/in/mohd-shariq-sheikh/"} className='flex justify-center items-center gap-2'>
-                        <button className='font-semibold text-lg text-white flex justify-center items-center transition-all duration-300 hover:scale-[1.2] hover:shadow-[0_0_10px_rgba(8,145,178,1)] gap-2 border-2 border-cyan-600 rounded-xl px-16 py-4 bg-cyan-600 bg-opacity-35'>
+                        <button className='font-semibold text-lg text-white flex justify-center items-center transition-all duration-300 hover:scale-[1.2] hover:shadow-[0_0_10px_rgba(8,145,178,1)] gap-2 border-2 border-cyan-600 rounded-xl px-8 lg:px-16 py-4 bg-cyan-600 bg-opacity-35'>
                             <Image priority src={LinkedIn} unoptimized alt="Email" width={25} height={25} />
                             LinkedIn
                         </button>

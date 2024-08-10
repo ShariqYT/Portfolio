@@ -13,7 +13,7 @@ export const metadata = {
     siteName: "Mohammad Shariq Portfolio",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: `${process.env.NEXT_PUBLIC_URL}/opengraph-image.png`,
         width: 1200,
         height: 630,
         alt: "Mohammad Shariq Portfolio",
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Mohammad Shariq | Portfolio",
     description: "Portfolio of Shariq, a full stack developer",
-    image: "/opengraph-image.png",
+    image: `${process.env.NEXT_PUBLIC_URL}/opengraph-image.png`,
   },
 };
 
