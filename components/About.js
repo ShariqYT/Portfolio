@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <section id="About" className='relative min-h-screen'>
-      <div className="bg-purple-400 absolute right=[70%] lg:right-[80%] top-[20%] rounded-full w-52 h-32 blur-[150px]"></div>
+      <div className="bg-purple-400 absolute right=[70%] lg:right-[80%] top-[20%] rounded-full w-52 h-32 blur-[150px] lg:block hidden"></div>
       <h1 className='lg:text-8xl text-5xl dark:text-white text-dark sticky -top-10 z-10 font-semibold lg:text-start text-center pb-16 pt-28 lg:px-20 lg:py-44'>A<span className='lg:text-7xl text-3xl'>BOUT</span> M<span className='lg:text-7xl text-3xl'>E</span></h1>
       <div className='absolute lg:top-96 lg:left-96 transform'>
         <div>
@@ -28,7 +28,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="bg-pink-600 absolute left-[50%] -bottom-[20%] lg:bottom-[30%] rounded-full w-52 h-32 blur-[150px]"></div>
+      <div className="bg-pink-600 absolute left-[50%] -bottom-[20%] lg:bottom-[30%] rounded-full w-52 h-32 blur-[150px] lg:block hidden"></div>
     </section>
   )
 }

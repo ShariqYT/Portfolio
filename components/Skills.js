@@ -59,7 +59,7 @@ const Skills = () => {
     return (
         <section id="Skills" className="relative dark:text-white text-dark lg:pt-0 pt-20 min-h-screen">
             {/* Titles */}
-            <div className="bg-violet-500 absolute lg:right-[75%] left-[20%] top-[2%] lg:top-[20%] rounded-full w-52 h-32 blur-[150px]"></div>
+            <div className="bg-violet-500 lg:block hidden absolute lg:right-[75%] left-[20%] top-[2%] lg:top-[20%] rounded-full w-52 h-32 blur-[150px]"></div>
             <h1 className="lg:text-left text-center sticky -top-20 z-10 lg:text-8xl text-5xl font-semibold py-20 lg:p-44">
                 S<span className="lg:text-7xl text-3xl">KILLS</span>
             </h1>
@@ -107,7 +107,7 @@ const Skills = () => {
                 <Image unoptimized priority title='Python' src={python} alt="Python" className='hover:scale-[1.2] transition-transform duration-300 w-32 lg:w-[200px]' width={200} height={200} />
             </div>
 
-            <div className="bg-violet-600 absolute left-[30%] lg:left-[80%] bottom-[20%] lg:bottom-[10%] rounded-full w-52 h-32 blur-[150px]"></div>
+            <div className="bg-violet-600 lg:block hidden absolute left-[30%] lg:left-[80%] bottom-[20%] lg:bottom-[10%] rounded-full w-52 h-32 blur-[150px]"></div>
         </section>
     );
 };

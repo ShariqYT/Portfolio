@@ -73,7 +73,7 @@ const Contact = () => {
         <section id="Contact" className="relative dark:text-white text-dark min-h-screen">
 
             {/* Titles */}
-            <div className="bg-pink-500 absolute left-[75%] top-[20%] rounded-full w-52 h-32 blur-[150px]"></div>
+            <div className="bg-pink-500 lg:block hidden absolute left-[75%] top-[20%] rounded-full w-52 h-32 blur-[150px]"></div>
             <div className='mb-24 lg:px-44'>
                 <p className='lg:text-right text-center lg:text-8xl text-5xl font-semibold pb-6 lg:pb-0 pt-28 lg:pt-40'>C<span className='lg:text-7xl text-3xl'>ONTACT</span> M<span className='lg:text-7xl text-3xl'>E</span></p>
                 <p className='lg:text-right text-center lg:text-base text-sm'>Feel free to contact me any time.</p>
@@ -157,7 +157,7 @@ const Contact = () => {
                 </form>
 
                 {/* Social Media Links */}
-                <div className='bg-purple-900 hover:scale-[1.1] hover:shadow-[0_0_50px_rgba(150,50,235,0.75)] transition-all duration-300 flex flex-col gap-4 px-16 py-20 rounded-lg'>
+                <div className='bg-purple-900 lg:hover:scale-[1.1] lg:hover:shadow-[0_0_50px_rgba(150,50,235,0.75)] transition-all duration-300 flex flex-col gap-4 px-16 py-20 rounded-lg'>
                     <Link target='_blank' href={"https://api.whatsapp.com/send?phone=+918545994449&text=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you!"} className='justify-center transition-all duration-300 hover:scale-[1.2] hover:drop-shadow-[0_0_10px_rgba(23,252,3,0.7)] flex items-center gap-4'>
                         <Image priority src={Whatsapp} unoptimized alt="Whatsapp" width={250} height={250} />
                     </Link>
@@ -176,7 +176,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="bg-violet-600 absolute left-[80%] bottom-[10%] rounded-full w-52 h-32 blur-[150px]"></div>
+            <div className="bg-violet-600 lg:block hidden absolute left-[80%] bottom-[10%] rounded-full w-52 h-32 blur-[150px]"></div>
         </section>
     )
 }

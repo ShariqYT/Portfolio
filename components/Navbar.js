@@ -32,8 +32,8 @@ const Navbar = () => {
 
     return (
         <header className='z-[999] fixed lg:top-6 w-[100vw] lg:flex justify-center'>
-            <div className="lg:rounded-full bg-gradient-to-r p-0.5 lg:w-[75vw] w-[100vw] from-blue-300 to-purple-300 shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)] ">
-                <div className='bg-light bg-opacity-90 dark:bg-opacity-85 dark:bg-black lg:rounded-full w-full py-4 lg:py-2 flex items-center justify-between text-black dark:text-light'>
+            <div className="lg:rounded-full bg-gradient-to-r p-0.5 lg:w-[75vw] w-[100vw] rounded-b-xl from-blue-300 to-purple-300 shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)] ">
+                <div className='bg-light bg-opacity-90 dark:bg-opacity-85 dark:bg-black lg:rounded-full rounded-b-xl w-full py-4 lg:py-2 flex items-center justify-between text-black dark:text-light'>
                     <div className='flex items-center gap-20'>
                         <Link href={'/'} className='font-pacifico hover:scale-[1.1] transition-transform duration-300 text-4xl px-6 lg:px-12 cursor-pointer'>Shariq</Link>
                     </div>
@@ -96,8 +96,8 @@ const Navbar = () => {
                     </div>
 
                     {/* Mobile Menu */}
-                    <div className={`${isOpen ? 'translate-y-0' : '-translate-y-[300px]'} -z-[1] transform transition-all duration-300 lg:hidden absolute top-20 left-0 lg:rounded-full bg-gradient-to-r p-0.5 lg:w-[75vw] w-full from-blue-300 to-purple-300 shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)]`}>
-                        <ul className='text-center text-lg bg-light bg-opacity-90 dark:bg-opacity-85 dark:bg-black lg:rounded-full w-full py-4 lg:py-2  text-black dark:text-light'>
+                    <div className={`${isOpen ? 'translate-y-0' : '-translate-y-[300px]'} -z-[1] rounded-xl transform transition-all duration-300 lg:hidden absolute top-[5.5rem] left-0 lg:rounded-full bg-gradient-to-r p-0.5 lg:w-[75vw] w-full from-blue-300 to-purple-300 shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)]`}>
+                        <ul className='text-center text-lg bg-light bg-opacity-90 dark:bg-opacity-85 rounded-xl dark:bg-black lg:rounded-full w-full py-4 lg:py-2  text-black dark:text-light'>
                             <Link
                                 href={'/'}
                                 className={`${activeLink === 'Home' ? 'scale-[1.1] font-semibold' : ''} my-4 flex flex-col items-center cursor-pointer hover:scale-[1.1] transition-transform duration-300`}

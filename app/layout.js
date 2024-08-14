@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {
+  metadataBase: new URL("https://shariqdevportfolio.netlify.app"),
   title: "Mohammad Shariq | Portfolio",
   description: "Portfolio of Shariq, a full stack developer",
   openGraph: {
